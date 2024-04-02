@@ -3,7 +3,7 @@ import React from 'react';
 import Particle from '../components/Particle';
 import backgroundImage from '../assets/earth.jpg';
 import Footer from '../components/Footer'; // Importa el componente Footer desde su ruta de archivo
-import '../styles/HomePages.css';
+import '../styles/home.css';
 
 import { Fade, Roll, LightSpeed } from 'react-reveal';
 
