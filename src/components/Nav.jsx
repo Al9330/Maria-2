@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Container } from 'react-bootstrap'; 
 import logo from '../assets/pngaaa.com-2507896.png'; 
-import '../components/styles/navbar.css'; 
+import '../styles/navbar.css'; 
 
 function Nav() {
   const [scrolled, setScrolled] = useState(false);

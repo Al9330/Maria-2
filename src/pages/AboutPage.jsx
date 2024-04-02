@@ -1,5 +1,5 @@
 import React from 'react';
-import '../components/styles/about.css'; 
+import '../styles/about.css'; 
 import { Fade, Roll } from 'react-reveal';
 import mariaImage from '../assets/perfil.jpg'; 
 

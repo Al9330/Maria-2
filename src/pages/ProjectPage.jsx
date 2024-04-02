@@ -1,8 +1,9 @@
 import React from 'react'; 
 import ProjectCards from '../pages/ProjectCards';
-import portfolio from '../portfolio.json';
+import portfolio from '../data/portfolio.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../components/styles/portfolio.css'; 
+import '../styles/portfolio.css'; 
+import Footer from '../components/Footer'; 
 
 function Portfolio() {
   return (
@@ -40,6 +41,9 @@ function Portfolio() {
           ))}
         </div>
       </div>
+      
+      {/* Agrega el componente de Footer al final de tu página */}
+      <Footer />
     </section>
   );
 }

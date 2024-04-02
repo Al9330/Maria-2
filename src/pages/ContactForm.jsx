@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MarImage from '../assets/Maria.gif'; 
 import { Roll } from 'react-reveal';
+import Footer from '../components/Footer'; // Importa el componente Footer
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -15,7 +16,8 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+    // Aquí podrías realizar la validación del formulario
+    console.log(formData); // Esto es solo para propósitos de demostración, debes enviar los datos a tu backend
     setFormData({ name: '', email: '', message: '' });
   };
 
@@ -48,7 +50,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="message" style={{ marginBottom: '5px', display: 'block' }}>Text:</label>
+            <label htmlFor="message" style={{ marginBottom: '5px', display: 'block' }}>Message:</label>
             <textarea
               className="form-control"
               id="message"
@@ -64,11 +66,8 @@ const ContactForm = () => {
           <img src={MarImage} alt="Maria" style={{ maxWidth: '400px' }} /> 
         </Roll>
       </div>
-      {/* Footer */}
-      <footer className="footer bg-dark fixed-bottom d-flex justify-content-center align-items-center">
-        <a href="https://github.com/Pilar1936" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/color/48/000000/github--v1.png" alt="Github" className="icon"/></a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn" className="icon"/></a>
-      </footer>
+      {/* Agrega el componente de Footer al final de tu página */}
+      <Footer />
     </div>
   );
 };
