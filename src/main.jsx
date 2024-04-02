@@ -1,5 +1,6 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
+import { createRoot } from 'react-dom'; // Importa createRoot de react-dom
+
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -43,7 +44,6 @@ const router = createBrowserRouter([
 ]);
 
 // Renderiza el componente RouterProvider
-
 
 createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
