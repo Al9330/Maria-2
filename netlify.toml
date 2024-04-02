@@ -1,4 +1,4 @@
 [build]
   base = "." 
-  publish = "path/to/Maria-2"  # Directorio que contiene los archivos del sitio que quieres desplegar
+  publish = "path/to/~/m/Maria-2 (main)"  # Directorio que contiene los archivos del sitio que quieres desplegar
   command = "npm run build"  # Comando para construir tu aplicación
